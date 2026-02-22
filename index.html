@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFit</title>
+    <style>
+        body {
+            font-family: 'Arial';
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            background-color: #ededfd;
+            color: #333;
+        }
+
+        header {
+            background-color: #ededfd;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+        
+        section.hero {
+            text-align: left;
+            padding:  50px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #763CEC;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #763CEC;
+        }
+
+        section.contact {
+            text-align: center;
+            padding: 50px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TeamFit</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Find your perfect team</h2>
+        <p>Match with teammates who complement your workstyle. From FYP to creative projects — build your dream team effortlessly.</p>
+        <a href="#contact" class="cta-button">Find your perfect team</a>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Create Profile</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"required>
+
+            <label for="message">Message:</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+            ></textarea>
+
+                <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
